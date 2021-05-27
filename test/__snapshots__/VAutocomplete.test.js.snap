@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VAutocomplete Render correctly 1`] = `
+"<div class=\\"v-autocomplete\\"><label for=\\"input-1\\" class=\\"v-autocomplete-input\\"><img src=\\"@/static/Vector.svg\\" alt=\\"search\\" class=\\"v-autocomplete-input__icon\\"> <input id=\\"input-1\\" type=\\"text\\" placeholder=\\"Search\\" autocomplete=\\"off\\" class=\\"v-autocomplete-input__textfield\\"></label>
+  <!---->
+  <!---->
+</div>"
+`;

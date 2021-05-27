@@ -1,9 +1,13 @@
 <template>
   <div v-click-outside="selectedHandler" class="v-autocomplete">
-    <label for="input-id" class="v-autocomplete-input">
-      <search-svg class="v-autocomplete-input__icon" />
+    <label :for="`input-${_uid}`" class="v-autocomplete-input">
+      <img
+        src="@/static/Vector.svg"
+        alt="search"
+        class="v-autocomplete-input__icon"
+      />
       <input
-        id="input-id"
+        :id="`input-${_uid}`"
         v-model="currentValue"
         type="text"
         class="v-autocomplete-input__textfield"
@@ -22,10 +26,7 @@
 </template>
 
 <script>
-import searchSvg from '@/static/Vector.svg?inline'
-
 export default {
-  components: { searchSvg },
   props: {
     placeholder: {
       type: String,
