@@ -18,3 +18,6 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+Время на разработку: ~5 часов
+Время на тесты: ~3 часа
