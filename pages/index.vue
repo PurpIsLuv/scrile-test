@@ -1,42 +1,27 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">scrile-test</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <v-autocomplete v-model="user" class="autocomplete" />
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      user: undefined
+    }
+  }
+}
 </script>
 
 <style>
 .container {
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+}
+
+.autocomplete {
+  margin: 200px auto;
 }
 
 .title {
